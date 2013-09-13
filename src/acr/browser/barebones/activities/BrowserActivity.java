@@ -162,7 +162,7 @@ public class BrowserActivity extends Activity implements OnTouchListener {
 					e.printStackTrace();
 				}
 				if (uBar.isShown()) {
-					currentTabTitle.setText("History");
+					currentTabTitle.setText(R.string.menu_history);
 					setUrlText("");
 					getUrl.setPadding(tenPad, 0, tenPad, 0);
 				}
@@ -1586,7 +1586,7 @@ public class BrowserActivity extends Activity implements OnTouchListener {
 		view.loadUrl("file://" + bookmarkWebPage);
 
 		if (uBar.isShown()) {
-			currentTabTitle.setText("Bookmarks");
+			currentTabTitle.setText(R.string.menu_bookmarks);
 			setUrlText("");
 			getUrl.setPadding(tenPad, 0, tenPad, 0);
 		}
